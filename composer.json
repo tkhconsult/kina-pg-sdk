@@ -1,5 +1,5 @@
 {
-    "name": "tkhconsult/kina-bank-gateway",
+    "name": "tkhconsult/kina-pg-sdk",
     "type": "library",
     "description": "Kina bank e-Commerce Gateway merchant interface",
     "keywords": [
