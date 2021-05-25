@@ -54,8 +54,8 @@ KINA_BANK_MERCHANT_NAME='Merchant company name'
 # Merchant company registered office address
 KINA_BANK_MERCHANT_ADDRESS='Merchant address'
 
-# Merchant secret key path
-KINA_BANK_MERCHANT_SECRET_KEY=/path/to/secret.key
+# File name of merchant secret key
+KINA_BANK_MERCHANT_SECRET_KEY=secret.key
 
 # Default Merchant shop timezone
 # Used to calculate the timezone offset sent to KinaBank
