@@ -8,12 +8,12 @@
 
 > Packagist package (library) to give any php-based website an access to the interface of KinaBank that merchant systems use to process credit card based e- commerce transactions using the standard CGI/WWW forms posting method. This interface transparently supports various cardholder authentication protocols such as 3-D Secure and Secure Code as well as legacy unauthenticated SSL commerce transactions.
 
-#### 🏠 [Homepage](https://github.com/TkhConsult/KinaBankGateway)
+#### 🏠 [Homepage](https://github.com/TkhConsult/kina-pg-sdk)
 
 ## Install
 
 ```sh
-composer require tkhconsult/kina-bank-gateway
+composer require tkhconsult/kina-pg-sdk
 ```
 
 ### Requirements
@@ -184,4 +184,4 @@ $kinaBankGateway
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/TkhConsult/KinaBankGateway/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/TkhConsult/kina-pg-sdk/issues).
