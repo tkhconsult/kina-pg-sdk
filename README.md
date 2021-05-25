@@ -1,8 +1,8 @@
-# Welcome to KinaBank Merchant e-Commerce Library 👋
+# Welcome to KinaBank Payment Gateway SDK 👋
 
-[![GitHub issues](https://img.shields.io/github/issues/TkhConsult/KinaBankGateway)](https://github.com/TkhConsult/KinaBankGateway/issues)
-[![Version](https://img.shields.io/packagist/v/tkhconsult/kina-bank-gateway)](https://packagist.org/packages/tkhconsult/kina-bank-gateway)
-![Packagist](https://img.shields.io/packagist/l/tkhconsult/kina-bank-gateway)
+[![GitHub issues](https://img.shields.io/github/issues/TkhConsult/kina-pg-sdk)](https://github.com/TkhConsult/KinaBankGateway/issues)
+[![Version](https://img.shields.io/packagist/v/tkhconsult/kina-pg-sdk)](https://packagist.org/packages/tkhconsult/kina-pg-sdk)
+![Packagist](https://img.shields.io/packagist/l/tkhconsult/kina-pg-sdk)
 
 ---
 
