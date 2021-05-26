@@ -59,21 +59,22 @@ KINA_BANK_MERCHANT_SECRET_KEY=secret.key
 
 # Default Merchant shop timezone
 # Used to calculate the timezone offset sent to KinaBank
-KINA_BANK_MERCHANT_TIMEZONE_NAME='Europe/Chisinau'
+# Refer: https://www.php.net/manual/en/timezones.php
+KINA_BANK_MERCHANT_TIMEZONE_NAME='Pacific/Port_Moresby'
 
 # Merchant shop 2-character country code. 
 # Must be provided if merchant system is located 
 # in a country other than the gateway server's country. 
-KINA_BANK_MERCHANT_COUNTRY_CODE=MD
+KINA_BANK_MERCHANT_COUNTRY_CODE=PG
 
 # Default currency for all operations: 3-character currency code 
-KINA_BANK_MERCHANT_DEFAULT_CURRENCY=MDL
+KINA_BANK_MERCHANT_DEFAULT_CURRENCY=PGK
 
 # Default forms language
-# By default are available forms in en, ro, ru. 
+# By default are available forms in en
 # If need forms in another languages please contact gateway
 # administrator
-KINA_BANK_MERCHANT_DEFAULT_LANGUAGE=ro
+KINA_BANK_MERCHANT_DEFAULT_LANGUAGE=en
 ```
 
 ### Step 2. Init Gateway client
