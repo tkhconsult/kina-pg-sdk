@@ -38,7 +38,7 @@ composer require symfony/dotenv
 .env file
 
 ```dosini
-# Merchant ID assigned by bank
+# Merchant ID / Card acceptor ID assigned by bank
 KINA_BANK_MERCHANT_ID=xxxxxxxxxxxxxxx
 
 # Merchant Terminal ID assigned by bank 
