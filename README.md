@@ -145,36 +145,9 @@ switch ($bankResponse::TRX_TYPE) {
         $kinaBankGateway->requestCompletion($amount, $bankOrderCode, $rrn, $intRef, $currency = null);
         break;
 
-    case KinaBankGateway::TRX_TYPE_COMPLETION:
-        # Funds successfully transferred on bank side
-        break;
-
-    case KinaBankGateway::TRX_TYPE_REFUND:
-        # Refund successfully applied on bank side
-        break;
-
-    case KinaBankGateway::TRX_TYPE_REVERSAL:
-        # Reversal successfully applied on bank side
-        break;
-
     default:
         throw new Exception('Unknown bank response transaction type');
 }
-```
-
-### Step 5. Request reversal (refund)
-
-```$rrn``` and ```$intRef``` must be saved on the step 4
-
-```php
-<?php
-
-use TkhConsult\KinaBankGateway\KinaBankGateway;
-
-/** @var KinaBankGateway $kinaBankGateway */
-$kinaBankGateway
-    ->requestReversal($orderId = 1, $amount = 1, $rrn = 'xxx', $intRef = 'yyy', $currency = null)
-;
 ```
 
 ## Author
