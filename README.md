@@ -1,8 +1,7 @@
 # Welcome to KinaBank Payment Gateway SDK 👋
 
 [![GitHub issues](https://img.shields.io/github/issues/TkhConsult/kina-pg-sdk)](https://github.com/TkhConsult/kina-pg-sdk/issues)
-[![Version](https://img.shields.io/packagist/v/tkhconsult/kina-pg-sdk)](https://packagist.org/packages/tkhconsult/kina-pg-sdk)
-![Packagist](https://img.shields.io/packagist/l/tkhconsult/kina-pg-sdk)
+[![Version](https://img.shields.io/packagist/v/tkhconsult/kina-pg-sdk.svg)](https://packagist.org/packages/tkhconsult/kina-pg-sdk)
 
 ---
 
