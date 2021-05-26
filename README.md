@@ -87,9 +87,9 @@ use TkhConsult\KinaBankGateway\KinaBankGateway;
 
 $kinaBankGateway = new KinaBankGateway();
 
-$certDir = '/path/to/cert/dir';
+$secretKeyDir = '/path/to/keys';
 $kinaBankGateway
-    ->configureFromEnv($certDir)
+    ->configureFromEnv($secretKeyDir)
 ;
 ```
 
