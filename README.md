@@ -120,7 +120,6 @@ $kinaBankGateway
 use TkhConsult\KinaBankGateway\KinaBankGateway;
 use TkhConsult\KinaBankGateway\KinaBank\Exception;
 use TkhConsult\KinaBankGateway\KinaBank\Response;
-use TkhConsult\KinaBankGateway\KinaBank\AuthorizationResponse;
 
 /** @var KinaBankGateway $kinaBankGateway */
 $bankResponse = $kinaBankGateway->getResponseObject($_POST);
@@ -131,6 +130,7 @@ if (!$bankResponse->isValid()) {
 
 switch ($bankResponse::TRX_TYPE) {
     case KinaBankGateway::TRX_TYPE_AUTHORIZATION:
+        $orderId        = KinaBankGateway::deNormalizeOrderId($bankResponse->{Response::ORDER});
         $amount         = $bankResponse->{Response::AMOUNT};
         $bankOrderCode  = $bankResponse->{Response::ORDER};
         $rrn            = $bankResponse->{Response::RRN};
@@ -139,9 +139,11 @@ switch ($bankResponse::TRX_TYPE) {
         #
         # You must save $rrn and $intRef from the response here for reversal requests
         #
+        echo '<pre>';
+        print_r([$bankResponse, $orderId]);
 
         # Funds locked on bank side - transfer the product/service to the customer and request completion
-        $kinaBankGateway->requestCompletion($amount, $bankOrderCode, $rrn, $intRef, $currency = null);
+        $kinaBankGateway->requestCompletion($orderId, $amount, $rrn, $intRef, $currency = "PGK");
         break;
 
     default:
