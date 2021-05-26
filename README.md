@@ -108,7 +108,7 @@ $backRefUrl = getenv('KINA_BANK_MERCHANT_URL').'/after-payment/';
 
 /** @var KinaBankGateway $kinaBankGateway */
 $kinaBankGateway
-    ->requestAuthorization($orderId = 1, $amount = 1, $backRefUrl, $currency = null, $description = null, $clientEmail = null, $language = null)
+    ->requestAuthorization($orderId = 1, $amount = 1, $backRefUrl, $currency = "PGK", $description = "iPhone X Pro", $clientEmail = "customer@yopmail.com", $language = 'en')
 ;
 ```
 
