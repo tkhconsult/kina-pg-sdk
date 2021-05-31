@@ -17,7 +17,6 @@ class KinaBankGateway
     const TRX_TYPE_AUTHORIZATION = 1;
     const TRX_TYPE_COMPLETION    = 21;
     const TRX_TYPE_REVERSAL      = 24;
-    const TRX_TYPE_REFUND        = 174;
 
     /**
      * @var bool
