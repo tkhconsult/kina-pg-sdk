@@ -38,6 +38,7 @@ abstract class Request implements RequestInterface
     protected $_requestFields = [];
     protected $_acceptUrl = '';
     protected $_submitButtonLabel = '';
+    protected $_pageType = 'embedded';
 
     /**
      * Construct
@@ -64,6 +65,7 @@ abstract class Request implements RequestInterface
 
         #Set gateway URL
         $this->_gatewayUrl = $gatewayUrl;
+        $this->_pageType = $pageType;
         $this->_acceptUrl = $acceptUrl;
         $this->_submitButtonLabel = $submitButtonLabel;
         #Set debug mode
