@@ -44,12 +44,15 @@ abstract class Request implements RequestInterface
      *
      * @param array  $requestParams
      * @param string $gatewayUrl
+     * @param string $pageType
+     * @param string $acceptUrl
+     * @param string $submitButtonLabel
      * @param bool   $debugMode
      * @param bool   $sslVerify
      *
      * @throws Exception
      */
-    public function __construct(array $requestParams, $gatewayUrl, $acceptUrl = '', $submitButtonLabel = '', $debugMode = false, $sslVerify = true)
+    public function __construct(array $requestParams, $gatewayUrl, $pageType, $acceptUrl = '', $submitButtonLabel = '', $debugMode = false, $sslVerify = true)
     {
         #Push the request field values
         foreach ($requestParams as $name => $value) {
