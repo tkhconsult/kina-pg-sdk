@@ -18,6 +18,12 @@
 <script src="<?php echo $host; ?>/kina/js/kbl-ec.js"></script>
 <link href="<?php echo $host; ?>/kina/css/kbl-ec.css" rel="stylesheet">
 <style>
+    .fg-row #kblpaymentiframe {
+        margin-top: 15%;
+    }
+    .fg-row .we-accept {
+        margin-bottom: 300px;
+    }
     .we-accept {
         padding-top: 40px;
     }
