@@ -144,9 +144,6 @@ switch ($bankResponse::TRX_TYPE) {
         #
         echo '<pre>';
         print_r([$bankResponse, $orderId]);
-
-        # Funds locked on bank side - transfer the product/service to the customer and request completion
-        $kinaBankGateway->requestCompletion($orderId, $amount, $rrn, $intRef, $currency = "PGK");
         break;
 
     default:
